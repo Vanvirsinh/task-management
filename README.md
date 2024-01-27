@@ -53,16 +53,22 @@ POST api/create-user
 
 #2. Task Management
 
-POST api/create-task ==> Creat a new task
+POST api/create-task ==> Create a new task
+
 GET api/user-tasks ==> Fetch all tasks. Parameters such as **priority**, **due_date**, **page**, **limit**
+
 PUT api/update-task/:task_id ==> Update the given task
+
 DELETE api/delete-task/:task_id ==> Delete the given task. This includes soft deletion.
 
 #3. Subtask Management
 
-POST api/create-subtask/:task_id ==> Creat a new subtask
+POST api/create-subtask/:task_id ==> Create a new subtask
+
 GET api/user-subtasks ==> Fetch all Subtasks. Parameters such as **task_id**
+
 PUT api/update-subtask/:subtask_id ==> Update the given subtask
+
 DELETE api/delete-subtask/:subtask_id ==> Delete the given subtask. This includes soft deletion.
 
 
