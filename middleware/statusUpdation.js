@@ -16,7 +16,6 @@ const taskStatusUpdation = async (task_id) => {
         }
     } catch (error) {
         console.error(error);
-        res.status(500).json({ success: false, message: "Oops, something went wrong with server!" });
     }
 }
 
